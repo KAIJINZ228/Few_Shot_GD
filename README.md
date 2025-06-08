@@ -17,13 +17,18 @@ We are the **award-winning team** of the **NTIRE 2025 Cross-Domain Few-Shot Obje
 ## 🧠 Overview
 
 This repository contains our solution for the `open-source track` of the NTIRE 2025 CD-FSOD Challenge.  
-We propose a method that integrates **[briefly describe your core idea]**, which achieves strong performance on the challenge. 
+We propose a method that integrates the mixture-of-experts(MoE) into Grounding DINO, which achieves strong performance on the challenge. 
 
 ---
 
 ## 🛠️ Environment Setup
 
 ```
+python 3.8.10
+torch 2.0.1
+transformers 4.33.1
+MultiScaleDeformableAttention 1.0
+numpy 1.22.2
 ```
 
 
@@ -33,13 +38,16 @@ Please follow the instructions in the [official CD-FSOD repo](https://github.com
 ## 🏋️ Training
 To train the model: 
 ```
+python3 main_train.py
 ```
+Stage2 training is still on its way, coming soon. 
 
-pretrained model: 
+pretrained model: The pre-trained checkpoint can be downloaded from the official website of Grounding DINO(https://github.com/IDEA-Research/GroundingDINO)
 
 ## 🔍 Inference & Evaluation
 Run inference:
 ```
+python3 inference_a_img.py
 ```
 
 ## 📄 Citation
@@ -52,7 +60,6 @@ If you use our method or codes in your research, please cite:
   year={2025}
 }
 ```
-and your workshop paper (if have)
 
 
 
